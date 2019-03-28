@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Honeycomb Erp">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+		<listener class-name="com.w2a.listners.CustomListeners"></listener>
+	</listeners>
+	<test thread-count="1" name="Purchase Purchase Order"> <classes> <class 
+		name="com.w2a.testcases.PurchaseOrder" /> </classes> 
+	</test><!--  Test -->
+	
+	<test thread-count="2" name="Supplier Invoice">
+		<classes>
+			<class name="com.w2a.testcases.SupplierInvoice" />
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- <test thread-count="5" name="Add Bank"> <classes> <class name="com.w2a.testcases.AddBank" 
+		/> </classes> </test> Test -->
+
+	<!-- <test thread-count="5" name="Add Bank Branches"> <classes> <class name="com.w2a.testcases.AddBankBranches" 
+		/> </classes> </test> Test -->
+
+	<!--<test thread-count="5" name="Add Bank Account"> <classes> <class name="com.w2a.testcases.AddBankAccount" 
+		/> </classes> </test> Test -->
+
+	<!-- <test thread-count="5" name="With drawl"> <classes> <class name="com.w2a.testcases.BankWithDrawl" 
+		/> </classes> </test> Test -->
+
+	<test thread-count="3" name="Invoice Catagory">
+		<classes>
+			<class name="com.w2a.testcases.InvoiceCategory" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="4" name="Setup Advance type">
+		<classes>
+			<class name="com.w2a.testcases.SetupAvanceType" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="5" name="Setup Customer Category">
+		<classes>
+			<class name="com.w2a.testcases.CustomerCategory" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="6" name="Setup Suplier Category">
+		<classes>
+			<class name="com.w2a.testcases.SuplierCategory" />
+		</classes>
+	</test>   <!-- Test -->
+	
+	<test thread-count="7" name="Setup Dimensions Project">
+		<classes>
+			<class name="com.w2a.testcases.DimensionsProject" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test thread-count="8" name="Setup Locations">
+		<classes>
+			<class name="com.w2a.testcases.Locations" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="9" name="Setup CostCenter">
+		<classes>
+			<class name="com.w2a.testcases.CostCenter" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+ 
